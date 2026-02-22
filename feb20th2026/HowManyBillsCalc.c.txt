@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int inputValue;
+	int firstRem;
+	int secRem;
+	int thirRem;
+	int fourRem;
+
+	printf("Give your USD amount: ");
+
+	scanf_s("%d", &inputValue);
+
+	firstRem = inputValue / 20;
+	inputValue = inputValue - (firstRem * 20);
+
+	secRem = inputValue / 10;
+	inputValue = inputValue - (secRem * 10);
+
+	thirRem = inputValue / 5;
+	inputValue = inputValue - (thirRem * 5);
+
+	fourRem = inputValue / 1;
+
+	printf("$20 bills: %d\n", firstRem);
+	printf("$10 bills: %d\n", secRem);
+	printf("$5 bills: %d\n", thirRem);
+	printf("$1 bills: %d\n", fourRem);
+
+	return 0;
+}

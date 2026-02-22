@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(void)
+{
+	int income = 0;
+	float taxIncome = 0;
+
+	printf("Enter your income: ");
+	scanf_s("%d", &income);
+
+	if (income <= 750)
+	{
+		taxIncome = income * 0.01;
+		printf("Tax is: $%f", taxIncome);
+	}
+	else if (income <= 2250)
+	{
+		taxIncome = 7.50 + ((income - 750) * 0.02);
+		printf("Tax is: $%f", taxIncome);
+	}
+	else if (income <= 3750)
+	{
+		taxIncome = 37.50 + ((income - 2250) * 0.03);
+		printf("Tax is: $%f", taxIncome);
+	}
+	else if (income <= 5250)
+	{
+		taxIncome = 82.50 + ((income - 3750) * 0.04);
+		printf("Tax is: $%f", taxIncome);
+	}
+	else if (income <= 7000)
+	{
+		taxIncome = 142.50 + ((income - 5250) * 0.05);
+		printf("Tax is: $%f", taxIncome);
+	}
+	else
+	{
+		taxIncome = 230 + ((income - 7000) * 0.06);
+		printf("Tax is: $%f", taxIncome);
+	}
+
+	return 0;
+
+}

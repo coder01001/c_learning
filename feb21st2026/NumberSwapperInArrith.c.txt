@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int number, numberDigTwo, numberDigOne;
+
+	printf("Enter Number: ");
+	scanf_s("%d", &number);
+
+	numberDigOne = number % 10;
+	numberDigTwo = number / 10;
+
+	printf("%d%d", numberDigOne, numberDigTwo);
+
+	return 0;
+}

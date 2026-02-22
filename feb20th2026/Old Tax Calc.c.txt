@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int beforeTax;
+	float afterTax;
+
+
+	printf("Your amount before Tax please: ");
+
+	scanf_s("%d", &beforeTax);
+
+	afterTax = (beforeTax * 5.0f / 100.0f) + beforeTax;
+
+	printf("Your amount after Tax: %f", afterTax);
+
+}

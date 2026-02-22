@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(void)
+{
+	int hours, minutes;
+
+	printf("Enter your time in military: ");
+	scanf_s("%d:%d", &hours, &minutes);
+
+	switch (hours)
+	{
+	case 1: printf("01:%d AM", minutes);
+		break;
+	case 2: printf("02:%d AM", minutes);
+		break;
+	case 3: printf("03:%d AM", minutes);
+		break;
+	case 4: printf("04:%d AM", minutes);
+		break;
+	case 5: printf("05:%d AM", minutes);
+		break;
+	case 6: printf("06:%d AM", minutes);
+		break;
+	case 7: printf("07:%d AM", minutes);
+		break;
+	case 8: printf("08:%d AM", minutes);
+		break;
+	case 9: printf("09:%d AM", minutes);
+		break;
+	case 10: printf("10:%d AM", minutes);
+		break;
+	case 11: printf("11:%d AM", minutes);
+		break;
+	case 12: printf("12:%d PM", minutes);
+		break;
+	case 13: printf("01:%d PM", minutes);
+		break;
+	case 14: printf("02:%d PM", minutes);
+		break;
+	case 15: printf("03:%d PM", minutes);
+		break;
+	case 16: printf("04:%d PM", minutes);
+		break;
+	case 17: printf("05:%d PM", minutes);
+		break;
+	case 18: printf("06:%d PM", minutes);
+		break;
+	case 19: printf("07:%d PM", minutes);
+		break;
+	case 20: printf("08:%d PM", minutes);
+		break;
+	case 21: printf("09:%d PM", minutes);
+		break;
+	case 22: printf("10:%d PM", minutes);
+		break;
+	case 23: printf("11:%d PM", minutes);
+		break;
+	default : printf("12:%d AM", minutes);
+		break;
+	}
+	
+	return 0;
+}

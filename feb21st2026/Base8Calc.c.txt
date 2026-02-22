@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int noneOctal;
+	int octalOne, octalTwo, octalThree, octalFour, octalFive;
+
+	printf("Enter a number up to 32767: ");
+	scanf_s("%d", &noneOctal);
+
+	octalFive = noneOctal % 8;
+	noneOctal = noneOctal / 8;
+	octalFour = noneOctal % 8;
+	noneOctal = noneOctal / 8;
+	octalThree = noneOctal % 8;
+	noneOctal = noneOctal / 8;
+	octalTwo = noneOctal % 8;
+	noneOctal = noneOctal / 8;
+	octalOne = noneOctal % 8;
+
+	printf("Your Octal Number: %d%d%d%d%d", octalOne, octalTwo, octalThree, octalFour, octalFive);
+
+	return 0;
+}

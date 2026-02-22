@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int x;
+
+	int outPut;
+	
+	printf("Your input for x here: ");
+	scanf_s("%d", &x);
+	
+	outPut = 3 * (x * x * x * x * x) + 2 * (x * x * x * x) - 5 * (x * x * x) - (x * x) + (7 * x) - 6;
+
+	printf("Your output: %d", outPut);
+
+	return 0;
+}
